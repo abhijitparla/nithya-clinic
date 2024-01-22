@@ -1,11 +1,9 @@
-import dbConn from '@/lib/dbConn'
 export default async function ReactForm() {
 
   async function addName(formData: FormData) {
     'use server'
     console.log("inside add name")
     console.log(formData.get('firstName'))
-    await dbConn
   }
    
   return (
