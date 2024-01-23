@@ -1,9 +1,20 @@
+import { sql } from '@vercel/postgres';
+import { NextResponse } from 'next/server';
+import mongoose from 'mongoose';
+
 export default async function ReactForm() {
 
   async function addName(formData: FormData) {
     'use server'
     console.log("inside add name")
     console.log(formData.get('firstName'))
+    // try {
+    //   const result =
+    //     await sql`CREATE TABLE Pets ( Name varchar(255), Owner varchar(255) );`;
+    //   return NextResponse.json({ result }, { status: 200 });
+    // } catch (error) {
+    //   return NextResponse.json({ error }, { status: 500 });
+    // }
   }
    
   return (
