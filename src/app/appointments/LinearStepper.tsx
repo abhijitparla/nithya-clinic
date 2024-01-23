@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import { AppForm } from './AppForm';
 import { dividerClasses } from '@mui/material';
 import PaymentSummary from './PaymentSummary';
+import AppointmentConfirmation from './AppointmentConfirmation';
 
 const steps = ['Select appointment details', 'Payment', 'Booking Status'];
 
@@ -70,7 +71,7 @@ export default function LinearStepper() {
       </Stepper>
       {activeStep === steps.length - 1 ? (
         <React.Fragment>
-          Appointment Booked Successfully!
+          <AppointmentConfirmation/>
         </React.Fragment>
       ) : (
         <React.Fragment>
