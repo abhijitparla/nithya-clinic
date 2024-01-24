@@ -51,7 +51,7 @@ export default function LinearStepper() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Stepper className='mb-8' activeStep={activeStep}>
+      <Stepper className='mb-8' activeStep={activeStep} orientation='horizontal'>
         {steps.map((label, index) => {
           const stepProps: { completed?: boolean } = {};
           const labelProps: {
