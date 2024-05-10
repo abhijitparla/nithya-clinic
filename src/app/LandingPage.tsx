@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import VarunImage from "../assests/gastro_landing.jpg";
+import VarunImage from "../assests/VarunRao.png";
 import Link from "next/link";
 
 const LandingPage = () => {
@@ -8,10 +8,10 @@ const LandingPage = () => {
     console.log("appointment handler");
   };
   return (
-    <div className="flex flex-col md:flex-row-reverse justify-center mt-2 p-5">
+    <div className="flex flex-col md:flex-row-reverse justify-center p-2 items-center self-center">
       <div className="flex justify-center md:w-1/2">
         <Image
-          className="w-full"
+          className="size-8/12"
           src={VarunImage}
           alt="Hero image of doctors examining human digestive system"
         />
@@ -23,7 +23,11 @@ const LandingPage = () => {
             stop you from enjoying your life
           </h1>
         </div>
-        <div className="text-center mt-20 flex flex-col w-52 self-center">
+        <div>
+          <h2 className="text-center">Dr. Varun Rao</h2>
+          <h3 className="text-center">MD DM. (Gastro)</h3>
+        </div>
+        <div className="text-center mt-10 flex flex-col w-52 self-center">
           <Link href="/appointments">
             <button className="bg-[#f46e58] text-[#ffffff]  hover:bg-stone-300 rounded-lg p-3 shadow-lg shadow-white w-full m-3">
               Book Appointment

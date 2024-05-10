@@ -1,4 +1,5 @@
 'use client'
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
 
@@ -7,7 +8,7 @@ const TopNavHeader = () => {
         console.log('inside hamburger')
     }
   return (
-    <div className="flex justify-between w-full p-5 shadow-lg">
+    <div className="flex justify-between w-full p-3 shadow-lg">
       <div className="flex ">
         {/* <div className="mr-2 border-2 border-slate-700 rounded-lg">
           <svg
@@ -27,7 +28,11 @@ const TopNavHeader = () => {
         <h1 className="font-bold text-xl text-[#385a64]">Nithya Gastroentology & Liver Clinic</h1>
         </Link>
       </div>
-      <div onClick={hamburgerHandle}> 
+      <div className="hidden lg:table ">
+        <Button className="mr-3">Book Appointment</Button>
+        <Button>Get Started</Button>
+      </div>
+      <div onClick={hamburgerHandle} className="self-center lg:hidden"> 
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
